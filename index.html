@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Segredo do Reino Mágico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <!--Screen 1-->
+        <div id="screen1" class="screen">
+            <h2>O Segredo do Reino Mágico</h2>
+            <button class="next-button" onclick="goToScreen(2)">Começar a aventura</button>
+        </div>
+
+        <!--Screen 2-->
+        <div id="screen2" class="screen">
+            <h2>Em uma noite estrelada, enquanto a lua cheia brilhava intensamente no céu, uma figura misteriosa
+                apareceu à minha janela. Era um(a) <span id="character">_____________</span>.</h2>
+            <button onclick="selectChoice('character', 'elfo')">Elfo</button>
+            <button onclick="selectChoice('character', 'fada')">Fada</button>
+            <button onclick="selectChoice('character', 'centauro')">Centauro</button>
+            <button class="next-button" onclick="goToScreen(3)">Continuar</button>
+        </div>
+
+        <!--Screen 3-->
+        <div id="screen3" class="screen">
+            <h2>Ele(a) me contou sobre sua terra natal, um reino mágico chamado <span id="place">_____________</span>,
+                que estava à beira de uma grande <span id="event">_____________</span>.</h2>
+            <button onclick="selectChoice('place', 'Lumíria')">Lumíria</button>
+            <button onclick="selectChoice('place', 'Asteria')">Asteria</button>
+            <button onclick="selectChoice('event', 'coroação')">Coroação de um novo rei</button>
+            <button onclick="selectChoice('event', 'guerra')">Guerra entre clãs mágicos</button>
+            <button class="next-button" onclick="goToScreen(4)">Continuar</button>
+        </div>
+
+        <!--Screen 4-->
+        <div id="screen4" class="screen">
+            <h2>Ele(a) me ofereceu uma chance única de testemunhar este evento, mas para isso, precisaríamos da ajuda de
+                um(a) <span id="guide">_____________</span> para nos guiar nesta jornada.</h2>
+            <button onclick="selectChoice('guide', 'mago ancião')">Mago Ancião</button>
+            <button onclick="selectChoice('guide', 'bruxa sábia')">Bruxa Sábia</button>
+            <button onclick="selectChoice('guide', 'grifo protetor')">Grifo Protetor</button>
+            <button class="next-button" onclick="goToScreen(5)">Continuar</button>
+        </div>
+
+        <!--Screen 5-->
+        <div id="screen5" class="screen">
+            <h2>Juntos, embarcamos nesta aventura, desvendando mistérios, enfrentando desafios e fazendo amigos
+                inesquecíveis ao longo do caminho. Ao final da jornada, retornei ao meu mundo com memórias que guardaria
+                para sempre e uma nova compreensão sobre a magia que existe em nosso universo.</h2>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
